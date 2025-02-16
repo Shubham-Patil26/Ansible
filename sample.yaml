@@ -5,9 +5,9 @@
   # vars_files:
   #     - ./var.txt
   vars_prompt:
-  private: false
       name: pokemon
       prompt: "what is your name"
+      private: false
   tasks:
     - name: your fav. pockemon
       debug:
