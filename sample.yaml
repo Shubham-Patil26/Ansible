@@ -1,11 +1,14 @@
 - name: this is my first playbook
   hosts: all
-  vars:
-    pokemon: "pikachu"
-  vars_files:
-      - ./var.txt
+  # vars:
+  #   pokemon: "pikachu"
+  # vars_files:
+  #     - ./var.txt
+  var_prompt:
+    name: pokemon
+    prompt: "what is your name"
   tasks:
-    - name: print hello msg
+    - name: your fav. pockemon
       debug:
         msg: "{{pokemon}}"
     - name: print hi
