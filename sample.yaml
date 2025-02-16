@@ -1,9 +1,16 @@
 - name: this is my first playbook
   hosts: all
+  vars:
+    pokemon: "pikachu"
   tasks:
     - name: print hello msg
       debug:
-        msg: "hello this is ansible"
+        msg: "{{pokemon}}"
     - name: print hi
       debug:
-        msg: "hi"
+        msg: "{{pokemon}}"
+    - name: local variable
+      debug:
+        msg: "{{pokemon}}"
+      vars:
+        pokemon: "pichu"
