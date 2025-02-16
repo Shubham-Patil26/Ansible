@@ -2,7 +2,7 @@
   hosts: all
   vars:
     pokemon: "pikachu"
-    vars_files:
+  vars_files:
       - ./var.txt
   tasks:
     - name: print hello msg
