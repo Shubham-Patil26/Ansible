@@ -4,7 +4,7 @@
   #   pokemon: "pikachu"
   # vars_files:
   #     - ./var.txt
-  var_prompt:
+  vars_prompt:
       name: pokemon
       prompt: "what is your name"
   tasks:
