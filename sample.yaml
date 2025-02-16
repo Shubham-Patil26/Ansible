@@ -1,9 +1,9 @@
 - name: this is my first playbook
   hosts: all
   tasks:
-    -name: print hello msg
-    debug:
-      msg: "hello this is ansible"
-    -name: print hi
-    debug:
-      msg: "hi"
+    - name: print hello msg
+      debug:
+        msg: "hello this is ansible"
+    - name: print hi
+      debug:
+        msg: "hi"
