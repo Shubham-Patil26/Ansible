@@ -5,8 +5,8 @@
   # vars_files:
   #     - ./var.txt
   var_prompt:
-    name: pokemon
-    prompt: "what is your name"
+      name: pokemon
+      prompt: "what is your name"
   tasks:
     - name: your fav. pockemon
       debug:
