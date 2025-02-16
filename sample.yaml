@@ -2,6 +2,8 @@
   hosts: all
   vars:
     pokemon: "pikachu"
+    vars_files:
+      - ./var.txt
   tasks:
     - name: print hello msg
       debug:
@@ -9,7 +11,7 @@
     - name: print hi
       debug:
         msg: "{{pokemon}}"
-    - name: local variable
+    - name: local variablegit
       debug:
         msg: "{{pokemon}}"
       vars:
